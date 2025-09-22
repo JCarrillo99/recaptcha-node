@@ -2,7 +2,7 @@
   <div class="lsx-recaptcha">
     <!-- v2 Checkbox -->
     <div v-if="v2CheckboxKey">
-      <h2>✅ reCAPTCHA v2 - </h2>
+      <h2>✅ reCAPTCHA v2 - Checkbox</h2>
       <div ref="checkboxContainer" class="recaptcha-container"></div>
       <button @click="executeV2Checkbox">Verificar Token</button>
       <div class="result" :class="{ success: results.v2Checkbox.success, error: !results.v2Checkbox.success }">
@@ -12,7 +12,7 @@
 
     <!-- v2 Badge Invisible -->
     <div v-if="v2BadgeKey">
-      <h2>🏷️ reCAPTCHA v2 - Badge Invisible</h2>
+      <h2>🏷️ reCAPTCHA v2 - Insignia Invisible</h2>
       <div ref="badgeContainer" class="recaptcha-container"></div>
       <button @click="executeV2Badge">Ejecutar v2 Badge Invisible</button>
       <div class="result" :class="{ success: results.v2Badge.success, error: !results.v2Badge.success }">
